@@ -1,19 +1,16 @@
 body {
-    background: #fff;
+    background-color: #fff;
     color: #303846;
     font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0;
-   /* height: 100%; */
+    font-size: 16px;
+    line-height: 24px;
 }
-
-a {
-    text-decoration: none;
-}
-ul, li {
-    display: block;
-    padding: 0;
-    margin: 0;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 .header {
     position: fixed;
@@ -21,31 +18,51 @@ ul, li {
     padding: 0;
     background: #fff;
 }
-img {
+.header-logo {
+    float: left;
+}
+.header-logo img {
+    margin-top: 5px;
     margin-right: 18px;
     margin-left: 20px;
 }
-.main-navigation {
-    display: flex;
-    height: 50px;
-    align-items: center;
+.site-name {
+    position: absolute;
+    top: 12px;
+    left: 75px;
+}
+.site-navigation {
+    float: right;
     font-size: 14px;
     font-weight: bold;
 }
+.site-navigation li{
+    float: right;
+    margin-left: 10px;
+}
+.site-navigation li:first-child {
+    margin-right: 10px;
+}
 .site-navigation {
-    display: flex;
     list-style: none;
-    margin-left: auto;
-
 }
-.site-navigation li a {
+.site-navigation a {
     color: #303846;
-    margin-right: 20px;
+    text-decoration: none;
 }
+.site-navigation a:hover {
+    color: rgb(100, 120, 172);
+    
+}
+.site-navigation a:active {
+    color:#10141a;
+}
+
 .banner {
     height: 450px;
     background: url(/images/banner.png);
     background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -54,7 +71,7 @@ img {
 .logo-image {
     margin-top: 80px;
 }
-h1 {
+.banner h1 {
     font-size: 33px;
     font-weight: bold;
     color: #fff;
@@ -67,7 +84,64 @@ h1 {
     padding: 0;
     margin-bottom: 0;
 }
-.advantages {
+.features-list {
+    min-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.features-list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.features-list li {
+    background-color: white;
+    list-style: none;
+}
+.feature-item {
+    width: 500px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.features h2 {
+    font-size: 19px;
+}
+.about {
+    display: flex;
+    min-width: 1000px;
+    background-color: #f7f7f7;
+}
+.info {
+    margin-top: 30px;
+    margin-right: 158px;
+    margin-left: 158px;
+    margin-bottom: 95px;
+}
+.picture-about {
+    margin-bottom: 54px;
+    margin-right: 158px;
+    margin-top: 50px;
+}
+.order {
+    min-width: 1000px;
+    background-color: #f7f7f7;
+}
+.order fieldset {
+    color: #09d3ac;
+    border-color: #00a685;
+}
+.order fieldset label {
+    color:#303846;
+}
+.order input[type="text"],
+.order select {
+    border-radius: 4px;
+}
+footer {
+    background-color:#303846;
+    color: white;
+}
+/* .advantages {
     height: 236px;
     width: auto;
     display: flex;
@@ -80,5 +154,5 @@ h1 {
     margin: 0px;
 }
 h2 {
-    font-size: 19px; 
-}
+     
+} */
