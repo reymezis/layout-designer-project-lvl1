@@ -68,7 +68,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.logo-image {
+.logo-image img {
+    width: 140px;
+    height: 140px;
     margin-top: 80px;
 }
 .banner h1 {
@@ -83,6 +85,22 @@ body {
     color: #fff;
     padding: 0;
     margin-bottom: 0;
+}
+.banner a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    width: 130px;
+    border: 1px solid #FFF;
+    border-radius: 8px;
+    background: 0;
+}
+.btn:hover {
+    color:rgb(207, 207, 207);
+    border-color: rgb(207, 207, 207);
 }
 .features-list {
     min-width: 1000px;
@@ -183,7 +201,7 @@ body {
     display: inline-block;
 }
 .count-rooms {
-    margin-right: 46px;
+    margin-right: 21px;
 }
 .apartment-options select{
     width: 120px;
@@ -191,7 +209,7 @@ body {
 .decor {
     display: inline-block;
     margin-bottom: 31px;
-    margin-right: 136px;
+    margin-right: 110px;
 }
 .contact-info {
     margin-top: 20px;
@@ -230,6 +248,10 @@ input[type="submit"] {
     margin-top: 16px;
     margin-bottom: 66px;
 }
+input[type="submit"]:hover {
+    color:rgb(147, 243, 216);
+    border: 1px solid rgb(147, 243, 216);
+}
 footer {
     height: 174px;
     display: flex;
@@ -240,9 +262,6 @@ footer {
     font-size: 14px;
     padding-top: 52px;
 }
-/* .footer-menu-1 {
-    margin-top: 20px;
-} */
 .footer-menu a {
     color: white;
     text-decoration: none;
