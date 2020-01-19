@@ -77,22 +77,23 @@
                 </p>
                 <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
             </div>
-            <div class="info-places">
+            <div class="view-picture">
                 <img src="images/moon-2.jpg" alt="Космонавт" width="311" height="200">
             </div>
         </section>
         <div class="order">
-            <h3>Оставьте заявку сегодня</h3>
+            <div class="wrapper">
+            <h3>Оставьте заявку сегодня!</h3>
             <form class="order-form" action="#" method="POST">
                 <fieldset class="apartment-options">
                     <legend>Параметры квартиры</legend>
-                    <label for="count-rooms">Количество комнат:</label>
+                    <label class="count-rooms" for="count-rooms">Количество комнат:</label>
                     <select name="rooms" id="count-rooms">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
-                    <label for="decor-type">Отделка:</label>
+                    <label class="decor" for="decor-type">Отделка:</label>
                     <select name="decoration" id="decor-type">
                         <option value="no">Без отделки</option>
                         <option value="basic">Стандарт</option>
@@ -101,37 +102,38 @@
                 </fieldset>
                 <fieldset class="contact-info">
                     <legend>Контактная информация</legend>
-                    <label for="name">Имя:</label>
+                    <label class="customer-name" for="name">Имя:</label>
                     <input type="text" name="name" id="name">
-                    <label for="name">Телефон:</label>
+                    <label class="phone" for="phone">Телефон:</label>
                     <input type="text" name="phone" id="phone">
-                    <label for="name">E-mail:</label>
+                    <label class="email" for="email">E-mail:</label>
                     <input type="text" name="email" id="email">
                 </fieldset>
                 <input class="btn" type="submit" value="Отправить">
             </form>
+            </div>
         </div>
     </main>
     <footer>
         <div class="footer-menu">
             <div class="footer-logo">
                 <img src="images/logo.svg" alt="Логотип лунное море" width="40" height="40">
-                <span class="name">Лунное море</span>
+                <span class="name-site">Лунное море</span>
             </div>
-            <span>&copy; 2032 год</span>
+            <span class="year">&copy; 2032 год</span>
         </div>
         <div class="footer-menu">
             <h4>Проектная документация</h4>
             <ul>
-                <li>Скачать</li>
-                <li>Посмотреть на сайте</li>
+                <li><a href="#">Скачать</a></li>
+                <li><a href="#">Посмотреть на сайте</a></li>
             </ul>
         </div>
         <div class="footer-menu">
             <h4>О застройщике</h4>
             <ul>
-                <li>Отзывы</li>
-                <li>Сайт компании</li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Сайт компании</a></li>
             </ul>
         </div>
     </footer>

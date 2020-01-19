@@ -122,37 +122,149 @@ body {
     margin-right: 158px;
     margin-top: 50px;
 }
+.relaxation-places {
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 1000px;
+    background-color:inherit;
+}
+.view-picture {
+    margin-left: 158px;
+    margin-right: 155px;
+    margin-top: 51px;
+    margin-bottom: 54px;
+}
+.info-places {
+    margin-top: 35px;
+    margin-right: 175px;
+    margin-bottom: 70px;
+}
 .order {
+    font-style: inherit;
+    font-weight: bold;
+    display: block;
     min-width: 1000px;
     background-color: #f7f7f7;
 }
+.wrapper {
+    width: 370px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.order h3 {
+    font-size: 24px;
+    text-align: center;
+}
 .order fieldset {
+    width: 370px;
+    padding-left: 18px;
     color: #09d3ac;
-    border-color: #00a685;
+    border-color: #09d3ac;
 }
 .order fieldset label {
+    display: inline-block;
+    margin-top: 18px;
     color:#303846;
 }
 .order input[type="text"],
 .order select {
-    border-radius: 4px;
+    border-radius: 6px;
+    border: 1px solid gray;
+
+}
+.order select {
+    height: 28px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    background: white;
+}
+.apartment-options {
+    display: inline-block;
+}
+.count-rooms {
+    margin-right: 46px;
+}
+.apartment-options select{
+    width: 120px;
+}
+.decor {
+    display: inline-block;
+    margin-bottom: 31px;
+    margin-right: 136px;
+}
+.contact-info {
+    margin-top: 20px;
+}
+.contact-info input {
+    width: 160px;
+    height: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    background: white;
+}
+.customer-name {
+    display: inline-block;
+    margin-right: 142px;
+}
+.phone {
+    display: inline-block;
+    margin-right: 104px;
+}
+.email {
+    display: inline-block;
+    margin-right: 127px;
+    margin-bottom: 24px;
+}
+input[type="submit"] {
+    text-align: center;
+    color: #5DCFAE;
+    display: inline-block;
+    padding: 10px;
+    width: 128px;
+    border: 1px solid #5DCFAE;
+    border-radius: 10px;
+    font: inherit;
+    background: 0;
+    margin-top: 16px;
+    margin-bottom: 66px;
 }
 footer {
-    background-color:#303846;
-    color: white;
-}
-/* .advantages {
-    height: 236px;
-    width: auto;
+    height: 174px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
+    justify-content: space-around;
+    background-color:#303846;
+    align-content: baseline;
+    color: white;
+    font-size: 14px;
+    padding-top: 52px;
 }
-.adnvantage {
-    padding: 0px 20px;
-    margin: 0px;
-}
-h2 {
-     
+/* .footer-menu-1 {
+    margin-top: 20px;
 } */
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+}
+.footer-menu a:hover {
+    color: rgb(100, 120, 172);
+}
+.footer-menu a:active {
+    color:#10141a;
+}
+.footer-menu h4 {
+    padding: 0;
+    margin: 0;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+.footer-logo img {
+    margin-right: 12px;
+}
+.year {
+    display: block;
+    margin-top: 16px;
+}
