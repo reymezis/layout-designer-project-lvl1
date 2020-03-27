@@ -58,22 +58,22 @@ body {
     color:#10141a;
 }
 
-.banner {
-    height: 450px;
+.intro {
     background: url(/images/banner.png);
-    background-position: center center;
+    background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 }
 .logo-image img {
     width: 140px;
     height: 140px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
-.banner h1 {
+.intro h1 {
     font-size: 33px;
     font-weight: bold;
     color: #fff;
@@ -86,8 +86,9 @@ body {
     padding: 0;
     margin-bottom: 0;
 }
-.banner a {
+.intro a {
     margin-top: 20px;
+    margin-bottom: 30px;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -102,60 +103,58 @@ body {
     color:rgb(207, 207, 207);
     border-color: rgb(207, 207, 207);
 }
-.features-list {
-    min-width: 1000px;
+.features {
     display: flex;
     justify-content: center;
+    padding: 40px 0px;
 }
-.features-list ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.features-list li {
+.features-list {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
     background-color: white;
-    list-style: none;
-}
-.feature-item {
-    width: 500px;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 .features h2 {
     font-size: 19px;
 }
 .about {
     display: flex;
-    min-width: 1000px;
+    justify-content: center;
     background-color: #f7f7f7;
+    padding: 60px 0px;
+}
+.wrapper-info {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.info-places h3 {
+    margin: 0 0;
 }
 .info {
-    margin-top: 30px;
+    display: block;
     margin-right: 158px;
-    margin-left: 158px;
-    margin-bottom: 95px;
-}
-.picture-about {
-    margin-bottom: 54px;
-    margin-right: 158px;
-    margin-top: 50px;
 }
 .relaxation-places {
     display: flex;
-    flex-direction: row-reverse;
-    min-width: 1000px;
+    justify-content: center;
     background-color:inherit;
+    padding: 60px 0px;
 }
-.view-picture {
-    margin-left: 158px;
-    margin-right: 155px;
-    margin-top: 51px;
-    margin-bottom: 54px;
+.wrapper-places {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 .info-places {
-    margin-top: 35px;
-    margin-right: 175px;
-    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 158px;
+}
+.info-places h3 {
+    margin: 0 0;
 }
 .order {
     font-style: inherit;
@@ -165,7 +164,7 @@ body {
     background-color: #f7f7f7;
 }
 .wrapper {
-    width: 370px;
+    width: 420px;
     margin: 0 auto;
     padding-top: 50px;
 }
