@@ -24,6 +24,12 @@ h4 {
     padding: 0;
     margin: 0;
 }
+a {
+    text-decoration: none;
+}
+main {
+    padding-top: 50px;
+}
 .btn {
     text-align: center;
     width: 130px;
@@ -35,26 +41,30 @@ h4 {
 }
 .header {
     position: fixed;
+    height: 50px;
     top: 0px;
     left: 0px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     background: #fff;
+    padding-left: 18px;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 .header-logo {
     display: flex;
     align-items: center;
-    padding-left: 18px;
 }
 .site-name {
+    font-weight: bold;
+    font-size: 14px;
     padding-left: 10px;
 }
 .site-navigation {
     display: flex;
     font-size: 14px;
     font-weight: bold;
-    padding-right: 10px;
     list-style: none;
 }
 .site-navigation li{
@@ -62,11 +72,9 @@ h4 {
 }
 .site-navigation a {
     color: #303846;
-    text-decoration: none;
 }
 .site-navigation a:hover {
     color: rgb(100, 120, 172);
-    
 }
 .site-navigation a:active {
     color:#10141a;
@@ -79,7 +87,6 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
 }
 .logo-image img {
     width: 140px;
@@ -92,26 +99,37 @@ h4 {
     padding: 0;
     margin-bottom: 0;
 }
-.intro a {
+.btn-white {
     margin-top: 20px;
     margin-bottom: 30px;
-    text-decoration: none;
     color: white;
     border-color: #FFF;
 }
-.btn:hover {
+.btn-white:hover {
     color:rgb(207, 207, 207);
     border-color: rgb(207, 207, 207);
+}
+.wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
 }
 .features {
     display: flex;
     justify-content: center;
     padding: 40px 0px;
 }
-.wrapper {
-    width: 1000px;
+.width-30 {
+    width: 30%;
+}
+.width-50 {
+    width: 50%;
+}
+.flex-justify-around {
+    justify-content: space-around;
+}
+.flex {
     display: flex;
-    justify-content: center;
 }
 .about {
     display: flex;
@@ -121,7 +139,6 @@ h4 {
 }
 .info {
     display: block;
-    margin-right: 158px;
 }
 .relaxation-places {
     display: flex;
@@ -133,7 +150,6 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    margin-left: 158px;
 }
 .order {
     font-style: inherit;
@@ -213,14 +229,14 @@ h4 {
     margin-right: 127px;
     margin-bottom: 24px;
 }
-input[type="submit"] {
+.btn-green {
     color: #5DCFAE;
     border-color:#5DCFAE;
     font: inherit;
     margin-top: 16px;
     margin-bottom: 66px;
 }
-input[type="submit"]:hover {
+.btn-green:hover {
     color:rgb(147, 243, 216);
     border: 1px solid rgb(147, 243, 216);
 }
