@@ -23,19 +23,21 @@
     </header>
     <main>
         <section class="intro">
-            <div class="logo-image">
-                <img src="images/logo.svg" alt="Логотип лунное море" width="140" height="140">
+            <div class="intro-content">
+                <div class="logo-image">
+                    <img src="images/logo.svg" alt="Логотип лунное море" width="140" height="140">
+                </div>
+                <h1>
+                    ЖК «Лунное море»
+                </h1>
+                <p class="tagline">
+                    Место, откуда не хочется улетать
+                </p>
+                <a class="btn btn-white" href="#make-order">Забронировать</a>
             </div>
-            <h1>
-                ЖК «Лунное море»
-            </h1>
-            <p class="tagline">
-                Место, откуда не хочется улетать
-            </p>
-            <a class="btn btn-white" href="#make-order">Забронировать</a>
         </section>
-        <section class="features" id="features">
-            <div class="flex flex-justify-around wrapper">
+        <section class="d-flex flex-justify-center padding-40-0" id="features">
+            <div class="flex-justify-around wrapper">
             <div class="width-30">
                 <h2>Уникальный вид</h2>
                 <p>Вид на космос из вашего окна. 
@@ -55,26 +57,22 @@
             </div>
             </div>
         </section>
-        <section class="about" id="about">
-            <div class="flex flex-justify-around wrapper">
-                <div class="width-50 info">
+        <section class="d-flex flex-justify-center padding-60-0 bg-gray" id="about">
+            <div class="flex-justify-around wrapper">
+                <div class="width-50">
                     <h3>О ЖК «Лунное море»</h3>
                     <p>Все чаще жители Москвы предпочитают загородный дом городской квартире,
                         к тому же связь с мегаполисом не теряется – 
                         современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
                     <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                 </div>
-                <div class="picture-about">
-                    <img src="images/moon-1.jpg" alt="Луна" width="313" height="209">
-                </div>
+                <img src="images/moon-1.jpg" alt="Луна" width="313" height="209">
             </div>
         </section>
-        <section class="relaxation-places" id="relaxation-places">
-            <div class="flex flex-justify-around wrapper">
-                <div class="view-picture">
-                    <img src="images/moon-2.jpg" alt="Космонавт" width="311" height="200">
-                </div>
-                <div class="info-places width-50">
+        <section class="d-flex flex-justify-center padding-60-0" id="relaxation-places">
+            <div class="flex-justify-around wrapper">
+                <img src="images/moon-2.jpg" alt="Космонавт" width="311" height="200">
+                <div class="width-50">
                     <h3>Места для отдыха</h3>
                     <p>
                         Луна обладает всеми условиями для 
@@ -85,10 +83,10 @@
                 </div>
             </div>
         </section>
-        <div class="order" id="make-order">
+        <div class="order bg-gray" id="make-order">
             <div class="wrapper-form">
             <h3>Оставьте заявку сегодня!</h3>
-            <form class="order-form" action="#" method="POST">
+            <form action="#" method="POST">
                 <fieldset class="apartment-options">
                     <legend>Параметры квартиры</legend>
                     <label class="count-rooms" for="count-rooms">Количество комнат:</label>
@@ -118,27 +116,29 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer-menu">
+    <footer class="d-flex flex-justify-center">
+        <div class="wrapper-footer">
+        <div>
             <div class="footer-logo">
                 <img src="images/logo.svg" alt="Логотип лунное море" width="40" height="40">
-                <span class="name-site">Лунное море</span>
+                <span>Лунное море</span>
             </div>
             <span class="year">&copy; 2032 год</span>
         </div>
-        <div class="footer-menu">
+        <div>
             <h4>Проектная документация</h4>
             <ul>
                 <li><a href="#">Скачать</a></li>
                 <li><a href="#">Посмотреть на сайте</a></li>
             </ul>
         </div>
-        <div class="footer-menu">
+        <div>
             <h4>О застройщике</h4>
             <ul>
                 <li><a href="#">Отзывы</a></li>
                 <li><a href="#">Сайт компании</a></li>
             </ul>
+        </div>
         </div>
     </footer>
 </body>
